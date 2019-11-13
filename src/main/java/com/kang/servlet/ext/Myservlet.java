@@ -16,7 +16,7 @@ public class Myservlet extends Servlet {
             System.out.println(m.getKey()+":"+m.getValue());
         }
         response.setContentType("text/html");
-        response.setWrite("我的名字是："+map.get("name")+"\n"+"我的年龄是："+map.get("age"));
+        response.setWrite("my name is:"+map.get("name")+"\n"+"my age is:"+map.get("age"));
     }
 
     @Override

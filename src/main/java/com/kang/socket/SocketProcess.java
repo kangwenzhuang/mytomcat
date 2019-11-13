@@ -57,7 +57,8 @@ public class SocketProcess extends Thread {
             System.out.println("**************************************************************");
             System.out.println(res);
             System.out.println("**************************************************************");
-            OutputStream outputStream = socket.getOutputStream();
+            OutputStream outputStream=response.getPs();
+//            OutputStream outputStream = socket.getOutputStream();
             outputStream.write(res.getBytes("UTF-8"));
             outputStream.flush();
             outputStream.close();

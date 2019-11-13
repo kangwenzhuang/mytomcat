@@ -37,12 +37,6 @@ public class Request {
         getParm = new GetParm();
         try {
             InputStream is = client.getInputStream();
-//            int len;
-//            byte[] buff=new byte[1024];
-//            while((len=is.read(buff))!=-1){
-//                System.out.println(new String(buff,0,len));
-//            }
-
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
             // 先读取第一行
